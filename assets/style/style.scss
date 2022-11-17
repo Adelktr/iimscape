@@ -80,6 +80,9 @@
   background-repeat: repeat-x;
   background-position: bottom;
   z-index: 100;
+  @media screen and(max-width: 800px) {
+    padding: 50px 25px 0px;
+  }
   a {
     text-decoration: none;
   }
@@ -87,6 +90,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    flex-wrap: wrap;
   }
   h2 {
     font-family: "Hacked";
@@ -101,6 +105,11 @@
     width: 45%;
     color: #fff;
     position: relative;
+    min-width: 500px;
+    @media screen and(max-width: 800px) {
+      width: 100%;
+      min-width: 0px;
+    }
     .insta-link {
       font-size: 32px;
       color: red;
@@ -129,10 +138,16 @@
     img:first-of-type {
       height: 275px;
       animation: 0.5s linear infinite running glitch3;
+      @media screen and(max-width: 800px) {
+        height: 150px;
+      }
     }
     img {
       height: 275px;
       animation: 0.5s linear infinite running glitch4;
+      @media screen and(max-width: 800px) {
+        height: 150px;
+      }
     }
   }
   &-bottom {
@@ -260,11 +275,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    label {
+    h2 {
       font-family: "Hacked";
       color: #fff;
       font-size: 48px;
       margin-bottom: 50px;
+      text-align: center;
     }
   }
   input {

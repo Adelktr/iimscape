@@ -76,6 +76,11 @@
   background-position: bottom;
   z-index: 100;
 }
+@media screen and (max-width: 800px) {
+  .context {
+    padding: 50px 25px 0px;
+  }
+}
 .context a {
   text-decoration: none;
 }
@@ -83,6 +88,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 .context h2 {
   font-family: "Hacked";
@@ -97,6 +103,13 @@
   width: 45%;
   color: #fff;
   position: relative;
+  min-width: 500px;
+}
+@media screen and (max-width: 800px) {
+  .context-left {
+    width: 100%;
+    min-width: 0px;
+  }
 }
 .context-left .insta-link {
   font-size: 32px;
@@ -127,9 +140,19 @@
   height: 275px;
   animation: 0.5s linear infinite running glitch3;
 }
+@media screen and (max-width: 800px) {
+  .context-right img:first-of-type {
+    height: 150px;
+  }
+}
 .context-right img {
   height: 275px;
   animation: 0.5s linear infinite running glitch4;
+}
+@media screen and (max-width: 800px) {
+  .context-right img {
+    height: 150px;
+  }
 }
 .context-bottom {
   color: #fff;
@@ -252,11 +275,12 @@
   flex-direction: column;
   align-items: center;
 }
-.unlock div:first-of-type label {
+.unlock div:first-of-type h2 {
   font-family: "Hacked";
   color: #fff;
   font-size: 48px;
   margin-bottom: 50px;
+  text-align: center;
 }
 .unlock input {
   height: 50px;
