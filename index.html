@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <video
+        id="video-header"
+        loop
+        autoplay
+        src="./assets/header-vid.mp4"
+        muted="muted"
+      ></video>
+      <img class="logo" src="./assets/logo.png" alt="IIMSCAPE">
+      <div class="header-content">
+        <h1>BIENVENUE SUR IIMSCAPE</h1>
+        <p>Découvrez l'inscape game de l'IIM !</p>
+        <div id="start" class="glitch">
+          <a href="#context">COMMENCER</a>
+        </div>
+      </div>
+    </div>
+    <div class="tear"></div>
+    <div id="context" class="context">
+      <h2>Contexte</h2>
+      <div>
+        <div class="context-left">
+          <p>
+            <span
+              >Bienvenue dans l’Inscape Game de l’IIM ! Tu as perdu tes moyens
+              et décidé de t’inscrire à la dernière minute dans cette école ? Ce
+              n’est pas très malin ! Le site de l’IIM a été hacké hier soir...
+              Pour empêcher les lève-tards comme toi de trouver quoi que ce soit
+              et d’avoir un avenir !
+              <br />
+              <br />
+              Mais le hacker est grand prince, il va te permettre de réussir à
+              débloquer le site afin que tu puisses t’inscrire à temps. Pour
+              cela, tu vas devoir résoudre une série d’énigme qui va te donner
+              la clé pour déverrouiller le site et te permettre d’accéder à la
+              page d’inscription. Attention, tu n’as que 10 min ! Dépasse ce
+              temps, et toute chance de s’inscrire à l’IIM sera perdue…
+              <br />
+              <br />
+              La seule information que nous avons sur ce hacker, c'est un compte
+              Instagram : <a class="insta-link"  target="_blank" href="https://www.instagram.com/iimscape/">@iimscape</a>
+            </span>
+          </p>
+          <img class="insta" src="./assets/insta.gif" alt="Instagram" />
+        </div>
+        <div class="context-right">
+          <img src="./assets/left.png" alt="hand" />
+          <img src="./assets/right.png" alt="hand" />
+        </div>
+      </div>
+      <a href="#unlock">
+        <div class="context-bottom">
+          <p>Débloquer le site</p>
+          <img src="./assets/chevron-down.png" alt="" />
+        </div>
+      </a>
+    </div>
+    <div id="unlock" class="unlock">
+      <div>
+        <label for="code">Entrez votre code</label>
+        <p class="error-msg">Code incorret !</p>
+        <input type="text" name="code" placeholder="XXXXXXX" id="code" />
+        <div class="glitch">
+          <a id="validate">VALIDER</a>
+        </div>
+      </div>
+      <img class="scream" src="./assets/woman.gif" alt="" />
+      <img class="scream-vr" src="./assets/skeleton.gif" alt="" />
+    </div>
+    <div class="overlay">
+      <div class="popup">
+        <div class="content">
+          <video
+            id="video-final"
+            loop
+            autoplay
+            src="./assets/final.mp4"
+            muted="muted"
+          ></video>
+          <div class="text">
+            <h2>FELICITATIONS</h2>
+            <p>Voici votre récompense :</p>
+            <br />
+            <br />
+            <a href="https://www.iim.fr/" class="link">www.iim.fr</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script/index.js"></script>
+</html>
